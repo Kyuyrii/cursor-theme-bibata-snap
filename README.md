@@ -1,0 +1,1 @@
+# cursor-theme-bibata-snap
