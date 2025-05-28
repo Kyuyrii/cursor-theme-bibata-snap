@@ -1,0 +1,33 @@
+name: cursor-theme-bibata
+build-base: core24
+base: bare
+version: '2.0.6-1'
+platforms:
+  all:
+    build-on: [amd64]
+    build-for: [all]
+summary: Bibata cursors
+description: |
+  A Snap that allows you to use Bibata cursors in Snap apps
+grade: stable
+confinement: strict
+
+slots:
+  icon-themes:
+    interface: content
+    source:
+      read:
+        - $SNAP/share/icons/Bibata-Modern-Amber
+        - $SNAP/share/icons/Bibata-Modern-Classic
+        - $SNAP/share/icons/Bibata-Modern-Ice
+        - $SNAP/share/icons/Bibata-Original-Amber
+        - $SNAP/share/icons/Bibata-Original-Classic
+        - $SNAP/share/icons/Bibata-Original-Ice
+parts:
+  bibata-cursors:
+    plugin: dump
+    source: http://archive.ubuntu.com/ubuntu/pool/universe/b/bibata-cursor-theme/bibata-cursor-theme_2.0.6-1_all.deb
+    organize:
+      usr/share/icons: share/icons
+    prime:
+      - share/icons/
