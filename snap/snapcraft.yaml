@@ -32,8 +32,8 @@ slots:
 parts:
   bibata-cursors:
     plugin: dump
-    source: https://github.com/Kyuyrii/cursor-theme-bibata-snap/releases/download/cursor-theme-bibata/bibata-cursors-v2.0.7.zip
+    source: https://github.com/Kyuyrii/cursor-theme-bibata-snap/releases/download/cursor-theme-bibata/cursor-theme-bibata_2.0.7.deb
     organize:
-      icon-themes: share/icons
+      usr/share/icons: share/icons
     prime:
       - share/icons/
