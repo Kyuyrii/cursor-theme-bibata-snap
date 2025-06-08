@@ -1,7 +1,7 @@
 name: cursor-theme-bibata
 build-base: core24
 base: bare
-version: '2.0.6-1'
+version: '2.0.7'
 platforms:
   all:
     build-on: [amd64]
@@ -18,16 +18,22 @@ slots:
     source:
       read:
         - $SNAP/share/icons/Bibata-Modern-Amber
+        - $SNAP/share/icons/Bibata-Modern-Amber-Right
         - $SNAP/share/icons/Bibata-Modern-Classic
+        - $SNAP/share/icons/Bibata-Modern-Classic-Right
         - $SNAP/share/icons/Bibata-Modern-Ice
+        - $SNAP/share/icons/Bibata-Modern-Ice-Right
         - $SNAP/share/icons/Bibata-Original-Amber
+        - $SNAP/share/icons/Bibata-Original-Amber-Right
         - $SNAP/share/icons/Bibata-Original-Classic
+        - $SNAP/share/icons/Bibata-Original-Classic-Right
         - $SNAP/share/icons/Bibata-Original-Ice
+        - $SNAP/share/icons/Bibata-Original-Ice-Right
 parts:
   bibata-cursors:
     plugin: dump
-    source: http://archive.ubuntu.com/ubuntu/pool/universe/b/bibata-cursor-theme/bibata-cursor-theme_2.0.6-1_all.deb
+    source: https://github.com/Kyuyrii/cursor-theme-bibata-snap/releases/download/cursor-theme-bibata/bibata-cursors-v2.0.7.zip
     organize:
-      usr/share/icons: share/icons
+      icon-themes: share/icons
     prime:
       - share/icons/
